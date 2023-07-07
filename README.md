@@ -1,5 +1,7 @@
 # RTK Recipe
 
+사이트 : https://rtk-recipe.vercel.app/
+
 Redux Toolkit을 연습해봅시다! 기본 Redux를 Redux Toolkit으로 수정해주세요.
 
 기본 레시피는 [만개의레시피](https://www.10000recipe.com/)에서 가져왔습니다. 출처를 명시해주세요.
