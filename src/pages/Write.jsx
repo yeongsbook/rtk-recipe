@@ -49,7 +49,7 @@ const Write = () => {
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
     const userId = currentUser.id;
-    if (currentUser) {
+    if (currentRecipe) {
       dispatch(updateRecipe({ id: currentRecipe.id, userId, ...formProps }));
       navigate("/");
       return;
