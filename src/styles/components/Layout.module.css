@@ -1,0 +1,100 @@
+.inner {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #999;
+  background: #fff;
+}
+.header .inner {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.header_title {
+  flex: 1 1 auto;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: -1.2px;
+}
+.header_link {
+  color: #000;
+  text-decoration: none;
+}
+.main {
+  padding-top: 61px;
+}
+.main .inner {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.login_button {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+.login_button:hover {
+  text-decoration: underline;
+}
+.header_menu {
+  position: relative;
+}
+.menu_button.on::after {
+  border-width: 0 5px 6px 5px;
+  border-color: transparent transparent #999 transparent;
+}
+.menu_button.on + .menu_list {
+  display: block;
+}
+.menu_button::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: #999 transparent transparent transparent;
+  vertical-align: middle;
+  content: "";
+}
+.menu_button .text {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.menu_list {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 2px 6px 4px rgba(0, 0, 0, 0.1);
+}
+.menu_item {
+  white-space: nowrap;
+}
+.menu_item + .menu_item {
+  border-top: 1px solid #ccc;
+}
+.menu_link {
+  display: block;
+  padding: 8px;
+  color: #222;
+}
+.menu_link:hover {
+  text-decoration: underline;
+}

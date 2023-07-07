@@ -1,0 +1,39 @@
+.main_title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.info_item {
+  margin-top: 20px;
+}
+.recipes {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #999;
+}
+.recipes_title {
+  font-size: 20px;
+  line-height: 26px;
+}
+.item {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.item::before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #04c;
+  content: "";
+}
+.link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #04c;
+}
+.link:hover {
+  text-decoration: underline;
+}

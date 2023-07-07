@@ -1,0 +1,54 @@
+.image_area {
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+.image_area img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main_title {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  word-break: keep-all;
+}
+.pre {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  white-space: pre-line;
+  word-break: break-all;
+}
+.summary {
+  color: #666;
+}
+.origin {
+  margin-top: 40px;
+}
+.origin .link {
+  color: #04c;
+}
+.bottom_button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 60px;
+  padding: 15px;
+  border-radius: 4px;
+  background: #000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.bottom_button + .bottom_button {
+  margin-top: 20px;
+}
