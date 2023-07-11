@@ -1,30 +1,20 @@
-const LOGIN = "user/LOGIN";
-const LOGOUT = "user/LOGOUT";
-
-export const login = (payload) => {
-  return {
-    type: LOGIN,
-    payload,
-  };
-};
-
-export const logout = () => {
-  return {
-    type: LOGOUT,
-  };
-};
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = null;
 
-const user = (state = initialState, action) => {
-  switch (action.type) {
-    case LOGIN:
+const userSlice = createSlice({
+  name: "user",
+  initialState,
+  reducers: {
+    login: (state, action) => {
       return { ...action.payload };
-    case LOGOUT:
+    },
+    logout: () => {
       return null;
-    default:
-      return state;
-  }
-};
+    },
+  },
+});
 
-export default user;
+export const { login, logout } = userSlice.actions;
+
+export default userSlice.reducer;

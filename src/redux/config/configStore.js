@@ -1,13 +1,9 @@
-import { createStore } from "redux";
-import { combineReducers } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 import recipes from "../modules/recipes";
 import user from "../modules/user";
 
-const rootReducer = combineReducers({
-  recipes,
-  user,
+const store = configureStore({
+  reducer: { recipes, user },
 });
-
-const store = createStore(rootReducer);
 
 export default store;
