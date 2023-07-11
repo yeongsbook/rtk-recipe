@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <ol className={styles.list}>
+      <ul className={styles.list}>
         {recipes.map((item) => (
           <li key={item.id} className={styles.item}>
             <Link to={`/recipe/${item.id}`} className={styles.card}>
@@ -18,7 +18,7 @@ const Home = () => {
             </Link>
           </li>
         ))}
-      </ol>
+      </ul>
     </>
   );
 };
